@@ -2,7 +2,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class PlayerScorerByOrderTest {
+public class PlayerScorerByRankOrderTest {
 
 
     @Test
@@ -11,7 +11,7 @@ public class PlayerScorerByOrderTest {
         Player player = new Player("Alex");
         player.takeCard(king);
         player.takeCard(king);
-        IScorer scorer = new PlayerScorerByOrder();
+        IScorer scorer = new PlayerScorerByRankOrder();
         int actualScore = scorer.getScore(player);
         assertEquals(26, actualScore);
     }
@@ -22,7 +22,7 @@ public class PlayerScorerByOrderTest {
         Player player = new Player("Alex");
         player.takeCard(ace);
         player.takeCard(ace);
-        IScorer scorer = new PlayerScorerByOrder();
+        IScorer scorer = new PlayerScorerByRankOrder();
         int actualScore = scorer.getScore(player);
         assertEquals(2, actualScore);
     }

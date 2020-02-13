@@ -1,4 +1,4 @@
-public class PlayerScorerByOrder implements IScorer {
+public class PlayerScorerByRankOrder implements IScorer {
 
     public int getScore(Player player){
         int score = 0;

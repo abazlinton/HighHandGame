@@ -19,7 +19,7 @@ public class GameTest {
         player1 = new Player("Colin");
         player2 = new Player("Louise");
         deck = new Deck();
-        scorer = new PlayerScorerByOrder();
+        scorer = new PlayerScorerByRankOrder();
         game = new Game(deck, scorer);
         game.addPlayer(player1);
         game.addPlayer(player2);
