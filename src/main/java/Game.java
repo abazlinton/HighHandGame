@@ -2,9 +2,9 @@ import java.util.ArrayList;
 
 public class Game {
 
-    ArrayList<Player> players;
-    Deck deck;
-    IScorer scorer;
+    private ArrayList<Player> players;
+    private Deck deck;
+    private IScorer scorer;
 
     public Game(Deck deck, IScorer scorer) {
         this.players = new ArrayList<Player>();
