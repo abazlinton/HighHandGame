@@ -1,4 +1,4 @@
-public class HighCardScorer implements IScorer {
+public class PlayerScorerByOrder implements IScorer {
 
     public int getScore(Player player){
         int score = 0;

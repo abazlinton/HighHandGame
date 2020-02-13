@@ -7,7 +7,7 @@ public class Runner {
 
         Scanner scanner = new Scanner(System.in);
         Deck deck = new Deck();
-        IScorer scorer = new HighCardScorer();
+        IScorer scorer = new PlayerScorerByOrder();
         Game game = new Game(deck, scorer);
         System.out.println("Welcome to Draw Hi/Lo!");
         System.out.println("How many players would you like to play?");
